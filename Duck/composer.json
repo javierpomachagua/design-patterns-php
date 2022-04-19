@@ -1,0 +1,19 @@
+{
+  "name": "project/duck",
+  "description": "description",
+  "minimum-stability": "stable",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "javierpomachagua",
+      "email": "email@example.com"
+    }
+  ],
+  "require": {
+  },
+  "autoload": {
+    "psr-4": {
+      "Duck\\": "src/"
+    }
+  }
+}
