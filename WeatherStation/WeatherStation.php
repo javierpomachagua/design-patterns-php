@@ -5,6 +5,7 @@ require_once('WeatherData.php');
 require_once('CurrentConditionsDisplay.php');
 require_once('StatisticsDisplay.php');
 require_once('HeatIndexDisplay.php');
+require_once('ForecastDisplay.php');
 
 class WeatherStation
 {
@@ -14,6 +15,7 @@ class WeatherStation
         $currentDisplay = new CurrentConditionsDisplay($weatherData);
         $statisticsDisplay = new StatisticsDisplay($weatherData);
         $heatIndexDisplay = new HeatIndexDisplay($weatherData);
+        $forecastDisplay = new ForecastDisplay($weatherData);
 
         $weatherData->setMeasurements(80, 65, 30.4);
         echo "Changing ...\n\r";

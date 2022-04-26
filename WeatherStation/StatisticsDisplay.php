@@ -26,10 +26,10 @@ class StatisticsDisplay implements Observer, DisplayElement
         echo "\n\r";
     }
 
-    public function update(float $temperature, float $humidity, float $pressure)
+    public function update()
     {
-        $this->temperature = $temperature;
-        $this->pressure = $pressure;
+        $this->temperature = $this->weatherData->getTemperature();
+        $this->pressure = $this->weatherData->getPressure();
         $this->display();
     }
 
