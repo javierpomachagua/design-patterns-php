@@ -1,0 +1,15 @@
+{
+    "name": "javierpoma/pizzafactory",
+    "autoload": {
+        "psr-4": {
+            "PizzaFactory\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "javierpomachagua",
+            "email": "javierpp0303@gmail.com"
+        }
+    ],
+    "require": {}
+}
